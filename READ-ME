@@ -1,1 +1,68 @@
+README – mtcars Exploratory Data Analysis (EDA)
 
+This script performs a complete exploratory data analysis (EDA) of the mtcars dataset using R. It includes data inspection, descriptive statistics, visualizations, outlier detection, correlation analysis, and group comparisons.
+
+What the Code Does
+1. Load Data & Libraries
+
+Loads tidyverse, ggplot2, and corrplot, then imports the mtcars dataset into df.
+
+2. Initial Data Exploration
+
+Checks structure (str) and summary statistics (summary).
+
+Identifies missing values and visualizes missingness.
+
+3. Descriptive Statistics
+
+Calculates mean, median, and standard deviation for all numeric variables.
+
+4. Data Visualization
+
+Creates:
+
+Histograms for mpg, wt, and hp
+
+Boxplots for mpg, disp, and qsec
+
+Scatterplot of mpg vs wt with trend line
+
+Scatterplot of mpg vs hp colored by number of cylinders
+
+Boxplot of mpg by transmission type (am)
+
+5. Outlier Detection
+
+Uses the IQR method to detect outliers in all numeric variables.
+
+6. Correlation Analysis
+
+Computes a correlation matrix.
+
+Visualizes correlations using corrplot.
+
+Extracts the three strongest positive/negative correlations.
+
+7. Group Analysis
+
+Compares mpg across:
+
+Number of cylinders (4, 6, 8)
+
+Transmission type (automatic vs manual)
+
+8. Statistical Testing & Modeling
+
+Performs a t-test to assess if mpg differs by transmission.
+
+Builds a multiple regression model (mpg ~ wt + hp + cyl) to identify key predictors.
+
+Summary of Insights
+
+Heavier and more powerful cars have lower fuel efficiency (mpg).
+
+Transmission type matters: manual cars achieve significantly higher mpg.
+
+Weight is the strongest predictor of mpg.
+
+Cars with 8 cylinders consume more fuel than 4- or 6-cylinder cars.
